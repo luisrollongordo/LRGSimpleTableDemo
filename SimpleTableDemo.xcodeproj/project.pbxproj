@@ -10,8 +10,9 @@
 		137DD4C31DAF6DF2003645CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137DD4C21DAF6DF2003645CB /* AppDelegate.swift */; };
 		137DD4C51DAF6DF2003645CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137DD4C41DAF6DF2003645CB /* ViewController.swift */; };
 		137DD4C81DAF6DF2003645CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137DD4C61DAF6DF2003645CB /* Main.storyboard */; };
-		137DD4CA1DAF6DF2003645CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137DD4C91DAF6DF2003645CB /* Assets.xcassets */; };
 		137DD4CD1DAF6DF2003645CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 137DD4CB1DAF6DF2003645CB /* LaunchScreen.storyboard */; };
+		137DD4D61DB0D0D4003645CB /* Pedido.swift in Sources */ = {isa = PBXBuildFile; fileRef = 137DD4D51DB0D0D4003645CB /* Pedido.swift */; };
+		137DD4FA1DB4A9FA003645CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137DD4F91DB4A9FA003645CB /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +20,11 @@
 		137DD4C21DAF6DF2003645CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		137DD4C41DAF6DF2003645CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		137DD4C71DAF6DF2003645CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		137DD4C91DAF6DF2003645CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		137DD4CC1DAF6DF2003645CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		137DD4CE1DAF6DF2003645CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		137DD4D41DAFFAD1003645CB /* ExampleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleProtocol.h; sourceTree = "<group>"; };
+		137DD4D51DB0D0D4003645CB /* Pedido.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pedido.swift; sourceTree = "<group>"; };
+		137DD4F91DB4A9FA003645CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +59,12 @@
 			children = (
 				137DD4C21DAF6DF2003645CB /* AppDelegate.swift */,
 				137DD4C41DAF6DF2003645CB /* ViewController.swift */,
+				137DD4D51DB0D0D4003645CB /* Pedido.swift */,
+				137DD4D41DAFFAD1003645CB /* ExampleProtocol.h */,
 				137DD4C61DAF6DF2003645CB /* Main.storyboard */,
-				137DD4C91DAF6DF2003645CB /* Assets.xcassets */,
 				137DD4CB1DAF6DF2003645CB /* LaunchScreen.storyboard */,
 				137DD4CE1DAF6DF2003645CB /* Info.plist */,
+				137DD4F91DB4A9FA003645CB /* Assets.xcassets */,
 			);
 			path = SimpleTableDemo;
 			sourceTree = "<group>";
@@ -96,6 +101,7 @@
 				TargetAttributes = {
 					137DD4BE1DAF6DF2003645CB = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -123,7 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				137DD4CD1DAF6DF2003645CB /* LaunchScreen.storyboard in Resources */,
-				137DD4CA1DAF6DF2003645CB /* Assets.xcassets in Resources */,
+				137DD4FA1DB4A9FA003645CB /* Assets.xcassets in Resources */,
 				137DD4C81DAF6DF2003645CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				137DD4D61DB0D0D4003645CB /* Pedido.swift in Sources */,
 				137DD4C51DAF6DF2003645CB /* ViewController.swift in Sources */,
 				137DD4C31DAF6DF2003645CB /* AppDelegate.swift in Sources */,
 			);
@@ -253,6 +260,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.efectoapple.SimpleTableDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -264,6 +272,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.efectoapple.SimpleTableDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -286,6 +295,7 @@
 				137DD4D31DAF6DF2003645CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
